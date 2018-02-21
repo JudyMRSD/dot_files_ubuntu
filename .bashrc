@@ -118,7 +118,10 @@ fi
 
 # SUMO selfdriving simulator
 export SUMO_HOME=/usr/share/sumo 
-export PATH="~/anaconda/bin:$PATH"
+export PYTHONPATH="${PYTHONPATH}:/usr/lib/python2.7/"
+#export PATH="~/anaconda/bin:$PATH"
+
+
 # show github branch
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
